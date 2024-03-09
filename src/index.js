@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
- import App16 from './App16';
+ import App15 from './App15';
 // import calc from './calc';
 //import Result from './Result';
 // import App from './App';
@@ -10,7 +10,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App16/>
+    <App15/>
   
   </React.StrictMode>
 );
