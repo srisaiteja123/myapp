@@ -1,12 +1,18 @@
-import React from 'react'
-import {FaHome,FaBookmark} from "react-icons/fa"
+import React from "react";
+import Feeds from "./Feeds";
+import Post from "./Post";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 export default function App15() {
   return (
     <div>
-<p><FaHome/>Home</p>
-<p><FaBookmark/>Feeds</p>
-<p>Post</p>
-<p>Album</p>
+      <BrowserRouter>
+        <Link to="/">Feeds</Link> | <Link to="/post">Post</Link>
+        <Routes>
+          
+            <Route path="/post" element={<Post/>}></Route>
+            <Route path="/" index element={<Feeds/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
